@@ -5,7 +5,7 @@ import Search from "../../assets/search.svg";
 import Pokemon from "../../interfaces/pokemon";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
-import Load from "../../components/load/load";
+import Load from "../../components/load";
 
 export default function Home() {
   const [search, setSearch] = useState("");
