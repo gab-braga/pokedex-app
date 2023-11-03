@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import Pokemon from "../../interfaces/pokemon";
 
-export default function Card({ image, name, id, type }: any) {
+export default function Card({ id, image, name, type }: Pokemon) {
   return (
     <Link
       to={`/dash/${id}/data`}

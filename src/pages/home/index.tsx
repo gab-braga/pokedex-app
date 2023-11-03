@@ -2,6 +2,7 @@ import { useState } from "react";
 import Card from "../../components/card";
 import { useNavigate } from "react-router-dom";
 import Search from "../../assets/search.svg";
+import Pokemon from "../../interfaces/pokemon";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -12,47 +13,47 @@ export default function Home() {
     // search
   }
 
-  const sugest = [
+  const sugest: Pokemon[] = [
     {
+      id: 25,
       image:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
       name: "Pikachu",
-      id: 25,
       type: "electric",
     },
     {
+      id: 4,
       image:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
       name: "Charmander",
-      id: 4,
       type: "fire",
     },
     {
+      id: 1,
       image:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
       name: "Bulbasaur",
-      id: 1,
       type: "grass",
     },
     {
+      id: 7,
       image:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
       name: "Squirtle",
-      id: 7,
       type: "water",
     },
     {
+      id: 19,
       image:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png",
       name: "Rattata",
-      id: 19,
       type: "normal",
     },
     {
+      id: 109,
       image:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png",
       name: "Koffing",
-      id: 109,
       type: "poison",
     },
   ];
