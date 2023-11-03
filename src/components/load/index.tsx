@@ -1,5 +1,4 @@
 import poke from "../../assets/poke.svg";
-import "./style.css";
 
 export default function Load() {
   return (

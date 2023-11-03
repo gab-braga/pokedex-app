@@ -87,3 +87,18 @@
   background-color: #f1948a;
   color: #f1948a;
 }
+
+.rotate-animation {
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(0);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
