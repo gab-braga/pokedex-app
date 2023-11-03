@@ -3,6 +3,7 @@ import Card from "../../components/card";
 import { useNavigate } from "react-router-dom";
 import Search from "../../assets/search.svg";
 import Pokemon from "../../interfaces/pokemon";
+import axios from "axios";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -10,7 +11,17 @@ export default function Home() {
   const navigate = useNavigate();
 
   function searchPokemon() {
-    // search
+    setLoading(true);
+    axios
+      .get(`https://pokeapi.co/api/v2/pokemon/${search}`)
+      .then(({ data: { id } }) => {
+        navigate(`/dash/${id}/data`);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error(error);
+        setLoading(false);
+      });
   }
 
   const sugest: Pokemon[] = [
