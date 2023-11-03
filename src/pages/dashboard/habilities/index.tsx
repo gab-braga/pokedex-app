@@ -20,7 +20,7 @@ export default function Habilities() {
   function format(str: string) {
     return (
       <span key={str} className="text-lg capitalize">
-        {str.replace("-", " ")}
+        {str.replaceAll("-", " ")}
       </span>
     );
   }
