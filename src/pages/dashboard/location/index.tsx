@@ -8,22 +8,21 @@ export default function Location() {
   const [locate, setLocate] = useState<any>(null);
 
   useEffect(() => {
-    axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${id}`)
-      .then(({ data }) => {
-        setPokemon(data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    (async () => {
+      const { data } = await axios.get(
+        `https://pokeapi.co/api/v2/pokemon/${id}`
+      );
+      setPokemon(data);
+    })();
   }, [id]);
 
   useEffect(() => {
-    axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${id}/encounters`)
-      .then(({ data }) => {
-        setLocate(data);
-      });
+    (async () => {
+      const { data } = await axios.get(
+        `https://pokeapi.co/api/v2/pokemon/${id}/encounters`
+      );
+      setLocate(data);
+    })();
   }, [pokemon]);
 
   function format(str: string) {

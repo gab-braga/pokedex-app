@@ -7,14 +7,12 @@ export default function Habilities() {
   const [pokemon, setPokemon] = useState<any>(null);
 
   useEffect(() => {
-    axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${id}`)
-      .then(({ data }) => {
-        setPokemon(data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    (async () => {
+      const { data } = await axios.get(
+        `https://pokeapi.co/api/v2/pokemon/${id}`
+      );
+      setPokemon(data);
+    })();
   }, [id]);
 
   function format(str: string) {
