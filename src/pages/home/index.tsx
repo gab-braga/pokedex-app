@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Search from "../../assets/search.svg";
 import Pokemon from "../../interfaces/pokemon";
 import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -19,6 +20,10 @@ export default function Home() {
         setLoading(false);
       })
       .catch((error) => {
+        toast.error("Pokemon não encontrado.", {
+          position: "top-right",
+          duration: 3000,
+        });
         console.error(error);
         setLoading(false);
       });
@@ -97,6 +102,7 @@ export default function Home() {
           ))}
         </div>
       </main>
+      <Toaster />
     </div>
   );
 }
