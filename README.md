@@ -1,27 +1,39 @@
-# React + TypeScript + Vite
+# Pokedex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
+Este é um projeto de Pokedex desenvolvido usando React.js, que permite aos usuários explorar 
+aprender mais sobre Pokémon. Ele consome dados da PokeAPI para fornecer informações precisas
+sobre diferentes espécies de Pokémon.
 
-Currently, two official plugins are available:
+## Funcionalidades Principais
+* Lista de Pokémon: Visualize uma lista de diferentes Pokémon, juntamente com seus nomes e números de identificação.
+* Detalhes do Pokémon: Clique em um Pokémon na lista para visualizar informações detalhadas, como tipos, habilidades e estatísticas.
+* Pesquisa: Use a funcionalidade de pesquisa para encontrar Pokémon específicos por nome.
+* Paginação: Navegue através das páginas de Pokémon para explorar mais espécies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ ## Como Usar
+ 1. Clone o repositório: `git clone https://github.com/F-Gabriel-Braga/pokedex-app`
+ 2. Acesse o diretório do projeto: `cd pokedex-app`
+ 3. Instale as dependências: `npm install`
+ 4. Inicie o aplicativo: `npm run dev`
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
+* React.js
+* TypeScript
+* Tailwind CSS
+* Axios
+* PokeAPI
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Contribuição
+Se você quiser contribuir para este projeto, siga estas etapas:
+1. Faça um fork do repositório.
+2. Crie uma nova branch com sua feature: `git checkout -b minha-feature`
+3. Faça o commit das mudanças: `git commit -m 'Adicione minha feature'`
+4. Envie para o repositório original: `git push origin minha-feature`
+5. Crie um pull request.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Visualização
+### Página Inicial
+![Captura de tela 2023-11-03 125306](https://github.com/F-Gabriel-Braga/pokedex-app/assets/66652642/7181534f-29ae-4862-baf3-11c00a46f8c2)
+### Dashboard
+![Captura de tela 2023-11-03 125221](https://github.com/F-Gabriel-Braga/pokedex-app/assets/66652642/f5830007-edaf-4c90-aa53-9e048f625a7d)
