@@ -5,12 +5,12 @@ import Habilities from "./pages/dashboard/habilities";
 import Location from "./pages/dashboard/location";
 import Metrics from "./pages/dashboard/metrics";
 import Home from "./pages/home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./pages/notfound";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dash/:id" element={<Dashboard />}>
@@ -21,7 +21,7 @@ function App() {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
