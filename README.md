@@ -5,6 +5,8 @@ Este é um projeto de Pokedex desenvolvido usando React.js, que permite aos usu�
 aprender mais sobre Pokémon. Ele consome dados da PokeAPI para fornecer informações precisas
 sobre diferentes espécies de Pokémon.
 
+Este projeto foi feito em colaboração com meu amigo, [Erineldo Filho](https://github.com/erfilho).
+
 ## Funcionalidades Principais
 * Lista de Pokémon: Visualize uma lista de diferentes Pokémon, juntamente com seus nomes e números de identificação.
 * Detalhes do Pokémon: Clique em um Pokémon na lista para visualizar informações detalhadas, como tipos, habilidades e estatísticas.
@@ -12,7 +14,7 @@ sobre diferentes espécies de Pokémon.
 * Paginação: Navegue através das páginas de Pokémon para explorar mais espécies.
 
  ## Como Usar
- 1. Clone o repositório: `git clone https://github.com/F-Gabriel-Braga/pokedex-app`
+ 1. Clone o repositório: `git clone https://github.com/gab-braga/pokedex-app`
  2. Acesse o diretório do projeto: `cd pokedex-app`
  3. Instale as dependências: `npm install`
  4. Inicie o aplicativo: `npm run dev`
@@ -34,6 +36,6 @@ Se você quiser contribuir para este projeto, siga estas etapas:
 
 ## Visualização
 ### Página Inicial
-![Captura de tela 2023-11-03 125306](https://github.com/F-Gabriel-Braga/pokedex-app/assets/66652642/7181534f-29ae-4862-baf3-11c00a46f8c2)
+![Captura de tela 2023-11-03 125306](https://github.com/gab-braga/pokedex-app/assets/66652642/7181534f-29ae-4862-baf3-11c00a46f8c2)
 ### Dashboard
-![Captura de tela 2023-11-03 125221](https://github.com/F-Gabriel-Braga/pokedex-app/assets/66652642/f5830007-edaf-4c90-aa53-9e048f625a7d)
+![Captura de tela 2023-11-03 125221](https://github.com/gab-braga/pokedex-app/assets/66652642/f5830007-edaf-4c90-aa53-9e048f625a7d)
